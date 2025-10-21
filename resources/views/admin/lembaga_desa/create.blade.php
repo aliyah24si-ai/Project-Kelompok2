@@ -297,7 +297,7 @@
                                     <!--  Name lembaga -->
                                     <div class="mb-3">
                                         <label for="nama_lembaga" class="form-label">Nama Lembaga</label>
-                                        <input name="nama_lembaga" id="nama_lembaga" class="form-control" required>
+                                        <input name="nama_lembaga" id="nama_lembaga" class="form-control"  required>
                                     </div>
                                 </div>
 
@@ -308,14 +308,15 @@
                                     <!-- deskripsi -->
                                     <div class="mb-3">
                                         <label for="deskripsi" class="form-label">Deskripsi</label>
-                                        <input name="deskripsi" type="textarea" id="deskripsi" class="form-control" required>
+                                        <input name="deskripsi" type="textarea" id="deskripsi" class="form-control"  required>
                                     </div>
 
                                     <!-- Kontak -->
                                     <div class="mb-3">
                                         <label for="kontak" class="form-label">Kontak</label>
-                                        <input name="kontak" id="kontak" class="form-control">
-                                    </div>
+                                        <input name="kontak" id="kontak" class="form-control"  required>
+                                    </div>>
+                                   
 
                                     <!-- Buttons -->
                                     <div class="">

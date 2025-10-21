@@ -293,10 +293,10 @@
                                 <div class="col-lg-4 col-sm-6">
                                   
 
-                                    <!-- Last Name -->
+                                    <!-- Name -->
                                     <div class="mb-3">
                                         <label for="nama_lembaga" class="form-label">Nama Lembaga</label>
-                                        <input name="nama_lembaga" id="nama_lembaga" class="form-control" required>
+                                        <input name="nama_lembaga" id="nama_lembaga" class="form-control"  required>
                                     </div>
                                 </div>
 
@@ -313,7 +313,7 @@
                                     <!-- Kontak -->
                                     <div class="mb-3">
                                         <label for="kontak" class="form-label">Kontak</label>
-                                        <input name="kontak" id="kontak" class="form-control">
+                                        <input name="kontak" id="kontak" class="form-control" >
                                     </div>
 
                                     <!-- Buttons -->
