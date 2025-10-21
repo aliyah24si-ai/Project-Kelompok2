@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
 use App\Http\Controllers\LembagadesaController;
+use App\Http\Controllers\jabatanController;
 
 
 
@@ -27,3 +28,5 @@ Route::get('/anggota', function () {
 
 Route::get('dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
+
+Route::resource('jabatan', jabatanController::class);
