@@ -9,8 +9,12 @@ class DashboardController extends Controller
     /**
      * Display a listing of the resource.
      */
+<<<<<<< HEAD
     public function index()
     {
+=======
+    public function index(){
+>>>>>>> 576cc6e6ce75a662c8d57620d9c9668531ef41e6
         return view('admin.dashboard');
     }
 
