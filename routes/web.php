@@ -12,9 +12,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('dashboard', [DashboardController::class, 'index'])
-        ->name('dashboard');
-
 Route::resource('lembagadesa', LembagadesaController::class);
 
 
@@ -27,6 +24,7 @@ Route::get('/anggota', function () {
 });
 
 Route::get('dashboard', [DashboardController::class, 'index'])
-        ->name('dashboard');
+      ->name('dashboard');
 
-Route::resource('jabatan', jabatanController::class);
+//Route::resource('jabatan', JabatanController::class);
+Route::resource('products', \App\Http\Controllers\ProductController::class);
