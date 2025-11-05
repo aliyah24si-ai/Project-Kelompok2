@@ -292,7 +292,7 @@
                             @csrf
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-sm-6">
-                                
+
 
                                     <!--  Name lembaga -->
                                     <div class="mb-3">
@@ -302,7 +302,7 @@
                                 </div>
 
 
-                                
+
 
                                 <div class="col-lg-4 col-sm-12">
                                     <!-- deskripsi -->
@@ -316,7 +316,7 @@
                                         <label for="kontak" class="form-label">Kontak</label>
                                         <input name="kontak" id="kontak" class="form-control"  required>
                                     </div>>
-                                   
+
 
                                     <!-- Buttons -->
                                     <div class="">

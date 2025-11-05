@@ -5,7 +5,7 @@ use App\Http\Controllers\DashboardController;
 
 use App\Http\Controllers\LembagadesaController;
 use App\Http\Controllers\jabatanController;
-
+use \App\Http\Controllers\ProductController;
 
 
 Route::get('/', function () {
@@ -30,3 +30,6 @@ Route::get('dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
 
 Route::resource('jabatan', jabatanController::class);
+
+
+Route::resource('products', ProductController::class);
