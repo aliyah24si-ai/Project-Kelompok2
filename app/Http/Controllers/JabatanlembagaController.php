@@ -5,15 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\jabatan_lembaga;
 
-class JabatanController extends Controller
+class JabatanlembagaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data['dataJabatan'] = jabatan_lembaga::all();
-        return view('admin.jabatan.index', $data);
+       // $data['dataJabatanlembaga'] = jabatanlembaga::all();
+       // return view('admin.jabatanlembaga.index', $data);
     }
 
     /**
@@ -21,7 +21,7 @@ class JabatanController extends Controller
      */
     public function create()
     {
-        return view('admin.jabatan.create');
+        return view('admin.jabatanlembaga.create');
     }
 
     /**
@@ -45,8 +45,8 @@ class JabatanController extends Controller
      */
     public function edit(string $id)
     {
-        $dataJabatan = jabatan_lembaga::find($id);
-        return view('admin.jabatan.edit', compact('dataJabatan'));
+        //$dataJabatan = jabatanlembaga::find($id);
+        return view('admin.jabatanlembaga.edit', compact('dataJabatan'));
     }
 
     /**

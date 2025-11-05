@@ -12,9 +12,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('dashboard', [DashboardController::class, 'index'])
-        ->name('dashboard');
-
 Route::resource('lembagadesa', LembagadesaController::class);
 
 
@@ -27,9 +24,14 @@ Route::get('/anggota', function () {
 });
 
 Route::get('dashboard', [DashboardController::class, 'index'])
-        ->name('dashboard');
+      ->name('dashboard');
 
+<<<<<<< HEAD
 Route::resource('jabatan', jabatanController::class);
 
 
 Route::resource('products', ProductController::class);
+=======
+//Route::resource('jabatan', JabatanController::class);
+Route::resource('products', \App\Http\Controllers\ProductController::class);
+>>>>>>> 8364eee21da8a0fc2cb611f42dd0586210517965

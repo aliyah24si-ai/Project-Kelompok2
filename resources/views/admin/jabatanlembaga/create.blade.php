@@ -88,7 +88,7 @@
                     </a>
                 </li>
                 <li class="nav-item  active ">
-                    <a href="{{ route ('lembagadesa.index')}}" class="nav-link" >
+                    <a href="{{ route ('jabatanlembaga.index')}}" class="nav-link" >
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
@@ -267,18 +267,18 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Lembaga Desa</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tambah Lembaga Desa</li>
+                    <li class="breadcrumb-item"><a href="#">Ljabatan lembaga</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tambah jabatan lembaga</li>
                 </ol>
             </nav>
             <div class="d-flex justify-content-between w-100 flex-wrap">
                 <div class="mb-3 mb-lg-0">
-                    <h1 class="h4">Tambah Lembaga Desa</h1>
-                    <p class="mb-0">Form untuk menambahkan data Lembaga Desa baru.</p>
+                    <h1 class="h4">Tambah jabatan lembaga</h1>
+                    <p class="mb-0">Form untuk menambahkan data jabatan lembaga baru.</p>
                 </div>
                 <div>
 <div>
-    <a href="{{ route('lembagadesa.index') }}" class="btn btn-secondary">Kembali</a>
+    <a href="{{ route('jabatanlembaga.index') }}" class="btn btn-secondary">Kembali</a>
 </div>
                 </div>
             </div>
@@ -288,21 +288,21 @@
             <div class="col-12 mb-4">
                 <div class="card border-0 shadow components-section">
                     <div class="card-body">
-                        <form action="{{ route('lembagadesa.store')}}" method="POST" >
+                        <form action="{{ route('jabatanlembaga.store')}}" method="POST" >
                             @csrf
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-sm-6">
-                                
 
-                                    <!--  Name lembaga -->
+
+                                    <!--  Name jabatan lembaga -->
                                     <div class="mb-3">
-                                        <label for="nama_lembaga" class="form-label">Nama Lembaga</label>
-                                        <input name="nama_lembaga" id="nama_lembaga" class="form-control"  required>
+                                        <label for="nama_jabatanlembaga" class="form-label">Nama jabatan lembaga</label>
+                                        <input name="nama_jabatanlembaga" id="nama_jabatanlembaga" class="form-control"  required>
                                     </div>
                                 </div>
 
 
-                                
+
 
                                 <div class="col-lg-4 col-sm-12">
                                     <!-- deskripsi -->
@@ -316,12 +316,12 @@
                                         <label for="kontak" class="form-label">Kontak</label>
                                         <input name="kontak" id="kontak" class="form-control"  required>
                                     </div>>
-                                   
+
 
                                     <!-- Buttons -->
                                     <div class="">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
-                                        <a href="{{ route('lembagadesa.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+                                        <a href="{{ route('jabatanlembaga.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
                                     </div>
                                 </div>
                             </div>

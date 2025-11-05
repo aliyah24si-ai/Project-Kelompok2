@@ -254,7 +254,11 @@ PHP;
         foreach ($fileFields as $field) {
             $name = $field['name'];
             $code .= <<<PHP
+<<<<<<< HEAD
          (\$request->hasFile('$name')) {
+=======
+        if (\$request->hasFile('$name')) {
+>>>>>>> 8364eee21da8a0fc2cb611f42dd0586210517965
             \$data['$name'] = \$request->file('$name')->store('uploads', 'public');
         }
 
@@ -271,7 +275,11 @@ PHP;
         foreach ($fileFields as $field) {
             $name = $field['name'];
             $code .= <<<PHP
+<<<<<<< HEAD
          (\$request->hasFile('$name')) {
+=======
+        if (\$request->hasFile('$name')) {
+>>>>>>> 8364eee21da8a0fc2cb611f42dd0586210517965
             if (\${$modelVar}->$name) {
                 Storage::disk('public')->delete(\${$modelVar}->$name);
             }

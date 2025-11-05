@@ -116,7 +116,7 @@
                 </li>
                 <!-- Tambahkan blok kode ini -->
                 <li class="nav-item  active ">
-                    <a href="{{ route('lembagadesa.index') }}" class="nav-link">
+                    <a href="{{ route('jabatanlembaga.index') }}" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5"
                                 stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@
                                 </path>
                             </svg>
                         </span>
-                        <span class="sidebar-text">Lembaga Desa</span>
+                        <span class="sidebar-text">jabatan lembaga</span>
                     </a>
                 </li>
 
@@ -372,7 +372,7 @@
                                         <th class="border-0">Nama Lembaga</th>
                                         <th class="border-0">Deskripsi</th>
                                         <th class="border-0">Kontak</th>
-                                        
+
                                         <th class="border-0 rounded-end">Action</th>
                                     </tr>
                                 </thead>
@@ -383,7 +383,7 @@
                                             <td>{{ $item->nama_lembaga }}</td>
                                             <td>{{ $item->deskripsi }}</td>
                                             <td>{{ $item->kontak }}</td>
-                                          
+
                                             <td><a href="{{ route('lembagadesa.edit', $item->lembaga_id) }}"
                                                     class="btn btn-info btn-sm">
                                                     <svg class="icon icon-xs me-2" data-slot="icon" fill="none"
